@@ -22,18 +22,20 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* Imagen centrada */
 .img-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px 0; 
+    margin: 25px 0;
 }
 
 .img-center img {
-    max-width: 100%;
+    max-width: 400px; /* Ancho máximo limitado para que se note el centrado */
+    width: 100%;
     height: auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
 }
 
 h1 {
@@ -44,6 +46,9 @@ h1 {
     padding-bottom: 15px;
     border-bottom: 3px solid #667eea;
 }
+
+/* Resto de tu CSS permanece igual... */
+
 .styled-table {
     width: 100%;
     border-collapse: collapse;
@@ -103,31 +108,17 @@ h1 {
     text-decoration: underline;
 }
 
-.img-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0; 
-}
-
-.img-center img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
-}
-
-
+/* Diseño responsive */
 @media screen and (max-width: 768px) {
     .styled-table {
         font-size: 0.85em;
     }
-    
+
     .styled-table th,
     .styled-table td {
         padding: 10px 12px;
     }
-    
+
     h1 {
         font-size: 1.5em;
     }
@@ -137,29 +128,30 @@ h1 {
     .styled-table thead {
         display: none;
     }
-    
+
     .styled-table tr {
         display: block;
         margin-bottom: 15px;
         border: 1px solid #dddddd;
         border-radius: 8px;
     }
-    
+
     .styled-table td {
         display: block;
         text-align: right;
         padding: 10px;
         border-bottom: 1px solid #dddddd;
     }
-    
+
     .styled-table td:before {
         content: attr(data-label);
         float: left;
         font-weight: bold;
         color: #667eea;
     }
-    
+
     .styled-table td:last-child {
         border-bottom: 0;
     }
 }
+
