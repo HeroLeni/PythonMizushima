@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: jingliu url("jingliu-honkai-star-rail.jpg") no-repeat fixed center;
+    background-image: url("jingliu-honkai-star-rail.jpg");
     padding: 20px;
     min-height: 100vh;
 }
